@@ -18,8 +18,23 @@ function onSubmit(e){
 
         userList.appendChild(li);
       window.localStorage.setItem(nameInput.value,emailInput.value);
+
+      let user ={
+        name : nameInput.value,
+        email : emailInput.value
+    }
+    
+
+    var user_serialize = JSON.stringify(user);
+    localStorage.setItem('user',user_serialize);
+    console.log(user_serialize);
         nameInput.value='';
         emailInput.value='';
         
     }
+    
 }
+
+var result = JSON.parse(localStorage.getItem('user'));
+console.log('retrieved data Object: ',result );
+
