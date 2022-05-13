@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parcel Sandbox</title>
 </head>
 <body>
-  <header>
-    <h1>Appointment Booking App</h1>
-</header>
-  
-<section class="'container">
-  <form id="my-form">
-      <div class="msg"></div>
-          <input type="text" id="name">
- 
-          <input type="text" id="last"> 
-      <input class="btn" type="submit" value="submit">
+  <header id="main-header">
+      <h1 id="title">Appointment Booking App</h1>
+  </header>  
+  <form id="user-form">
+      <div >
+        <div>
+        <label>Name:</label><br>
+        <input type="text" id="input1" >
+        </div>
+        <div>
+        <label>Age:</label><br>
+        <input type="number" id="input2" min="1" max="150">
+        </div>
+        <div>
+        <label>Email:</label><br>
+        <input type="email" id="input3">
+        </div><br>
+        <input type="submit" id="save" value="Submit">
+      </div>
   </form>
-  <ul id="users"></ul>
-</section>
-    <script src="main.js"></script>
+  <ul id="userLists"></ul>
 
+  <script src="main.js"></script>
 </body>
 </html>
